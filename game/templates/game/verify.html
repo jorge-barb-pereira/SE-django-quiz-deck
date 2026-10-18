@@ -1,0 +1,4 @@
+{% extends 'game/base.html' %}{% block title %}Verify your code · Quiz Deck{% endblock %}
+{% block content %}<section class="panel narrow"><p class="eyebrow">ONE MORE STEP</p><h1>You're nearly in.</h1>
+<p>Enter the six-digit code from your verification message.</p><form method="post">{% csrf_token %}{{ form.as_p }}
+<button class="primary">Verify and continue →</button></form><p class="small"><a href="{% url 'login' %}">Use another email or request a new code</a></p></section>{% endblock %}

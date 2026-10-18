@@ -1,0 +1,527 @@
+[
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/__init__.py",
+    "published": "archive/quiz/card_game/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "published_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/admin.py",
+    "published": "archive/quiz/card_game/admin.py",
+    "source_sha256": "52d0be972bd0cd0a5b2dd357b2b93f2948a93dd1e606395265a8d5c0b7a6ab76",
+    "published_sha256": "43305c11789dc5d713abb351e0fa2492809a0670977f7276dc09e139a522d10f",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/apps.py",
+    "published": "archive/quiz/card_game/apps.py",
+    "source_sha256": "4ade4737715e512a4ec96b53d6793df23c12a43688a0ca9e956b6edc3d9d818c",
+    "published_sha256": "646faf4c89ee65ca623c56581693411f95a1a4f1392ac985bfaf7b4a7db8c0af",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/card_game.py",
+    "published": "archive/quiz/card_game/card_game.py",
+    "source_sha256": "1041de467fda6872b1d9f41f72228aaab16df37ac939adc1104bffbe02c4a821",
+    "published_sha256": "93bbdd997f78c0e5437154d7c806ed65dc25dbadcc97da3631e2ce5512bd1fb9",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/forms.py",
+    "published": "archive/quiz/card_game/forms.py",
+    "source_sha256": "1041de467fda6872b1d9f41f72228aaab16df37ac939adc1104bffbe02c4a821",
+    "published_sha256": "93bbdd997f78c0e5437154d7c806ed65dc25dbadcc97da3631e2ce5512bd1fb9",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/middleware.py",
+    "published": "archive/quiz/card_game/middleware.py",
+    "source_sha256": "0bbb7053ac56c1ed5c5255d43d52d7a1390ec32e76995d712c3362433a9d31ec",
+    "published_sha256": "404fcdbbf6961364ee96dec776905ad4d6e80ce156c3c3dc3db99ec63a73b88b",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/migrations/0001_initial.py",
+    "published": "archive/quiz/card_game/migrations/0001_initial.py",
+    "source_sha256": "ed927fd00b814a7a921fb1cacf1b87bebd9395f195431badb6a14cb96a87fdbf",
+    "published_sha256": "6891e9b584ea1074da069185f28350544e8d3d66bf6e14c6b1b7c89bad372313",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/migrations/0002_question_game_card.py",
+    "published": "archive/quiz/card_game/migrations/0002_question_game_card.py",
+    "source_sha256": "b2248a5b1c51baca880f27d965e070b97338233a01979473eab1c57f96a59e06",
+    "published_sha256": "77847df60edf8b164e42b0e268cb739fdb5e5b3737a61de0a84e81c23c11701c",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/migrations/0003_game_answered_cards.py",
+    "published": "archive/quiz/card_game/migrations/0003_game_answered_cards.py",
+    "source_sha256": "574163eb4b8e4766382df002d32b2b1e90b715825a393b1a582c32b9de3fc265",
+    "published_sha256": "7b7a728e0e9485b2019b510cd1d5758be257d66fc185286d455a68b5a69e1860",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/migrations/0004_rename_answered_cards_game_selected_answers_and_more.py",
+    "published": "archive/quiz/card_game/migrations/0004_rename_answered_cards_game_selected_answers_and_more.py",
+    "source_sha256": "44a51ef5c00b975223eb6aaf73a05aadf8a5d605a959fccd4e72d3ce1a859983",
+    "published_sha256": "1468e8be02fb780671d2c1ba0d79fefa9ee227d374870bda01a3e1a1e684578e",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/migrations/0005_game_duration_s.py",
+    "published": "archive/quiz/card_game/migrations/0005_game_duration_s.py",
+    "source_sha256": "82fcb8f1906559cab71dc3935e8073e423d24880e54f0d8132d0145ca5525449",
+    "published_sha256": "1441ccf78aecba5777f877216551f55df75699cd91e5ef36c328ccbf9fbb759b",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/migrations/__init__.py",
+    "published": "archive/quiz/card_game/migrations/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "published_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/models.py",
+    "published": "archive/quiz/card_game/models.py",
+    "source_sha256": "66b87a14d300fff2e422f203ae50edfcba308124c40b09b028326cb05c51a7e2",
+    "published_sha256": "a1d4f12206c389c9f8d1986b9284c44866003f6f05f87db32f2909c192ef477e",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/templates/auth/first_step.html",
+    "published": "archive/quiz/card_game/templates/auth/first_step.html",
+    "source_sha256": "76923fbce8e137b41afe4db41463e49b295fa3556fc001d409beb066df67352d",
+    "published_sha256": "c37573690400ca5857f593a884555d080b0bb3780ed5d6131368538a1ba7292d",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/templates/auth/second_step.html",
+    "published": "archive/quiz/card_game/templates/auth/second_step.html",
+    "source_sha256": "4f8442092c295f0e161d21ad7a766859366d18c2f836c084d2f2259c5ecca56b",
+    "published_sha256": "7f5e295c46b82b8edef5ab5888771ba25fec058822d9bba65a0995f83b792a50",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/templates/game/dashboard.html",
+    "published": "archive/quiz/card_game/templates/game/dashboard.html",
+    "source_sha256": "ce44ec6d4595dc4f816e1675577368c370aa14be5415bf829268350b34b9215d",
+    "published_sha256": "8b55bdb9ecad17397056e088f59e6fc15225a43e76d6bcd62d5d87bcad07c69c",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/templates/game/end.html",
+    "published": "archive/quiz/card_game/templates/game/end.html",
+    "source_sha256": "d737c5184968bf881a83b067ee96ad91bb19825b5085e8591bc9db1806cc890c",
+    "published_sha256": "076a7e26147f7d4865a19dba1683fab6ae11cf9cf2568a15096091b418efd589",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/templates/game/instructions.html",
+    "published": "archive/quiz/card_game/templates/game/instructions.html",
+    "source_sha256": "b787f5ce375a7634135ed50505ba2e35f6890803e20db555e4f69a414327a02e",
+    "published_sha256": "023b3dab0782e09a93e08d4820154c6d42c00f889c5441e10b9ca4d98fc18e75",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/templates/game/max_attempts_exceeded.html",
+    "published": "archive/quiz/card_game/templates/game/max_attempts_exceeded.html",
+    "source_sha256": "640d14a72f7e41214ff54244aeed9678a4a47e89e7ec8189486720ea58f5e7a5",
+    "published_sha256": "41b806f6ab341cebee37a4b3ee31b336aeac24e13c389ac51099578ab58b9fc3",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/templates/game/question.html",
+    "published": "archive/quiz/card_game/templates/game/question.html",
+    "source_sha256": "97c5e99e4b620de7e55c262a2e330baff7f3962c823d6a4197b5a2042a3a4140",
+    "published_sha256": "f1fed07917ab275e77cdf9f0c4ac1103db43b5d28d6c7dcb8afcfd982b67318e",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/tests.py",
+    "published": "archive/quiz/card_game/tests.py",
+    "source_sha256": "dae0da7efdcdb3a7fb572d5e914b60631099122d4a4727ac6434c016161c5fe1",
+    "published_sha256": "9ab6c6191360e63c1b4c9b5659aef348a743c9e078be68190917369e4e9563e8",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/urls.py",
+    "published": "archive/quiz/card_game/urls.py",
+    "source_sha256": "8a6c586c711a8bc18e40c6be645ca385250927cd557b903a8115bf531597e566",
+    "published_sha256": "504bc7a57013b112a8aeb2df56ffa04952b486db29d2d19821da5ff8e5489ff1",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/card_game/views.py",
+    "published": "archive/quiz/card_game/views.py",
+    "source_sha256": "cf2b1e7f6ee6843d83e8fbea8c1d716367d4fe89250c967612f4535f3acadb6e",
+    "published_sha256": "0937b29e89052d15b3c1caaa6f2fb754ec9d828b7a6291629971c6615ee68712",
+    "transformations": [
+      "Institution-specific email domain replaced by example.invalid.",
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/manage.py",
+    "published": "archive/quiz/manage.py",
+    "source_sha256": "228bbebcb2dd15f9dd06fc096bbcfcddc641e4d10dbe04b0259e5b3a780073bb",
+    "published_sha256": "3208ecc99c43959e4896d706ce46a4dcd8386a9ef8110852589276a8a0f22e8b",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/student_eval_4/__init__.py",
+    "published": "archive/quiz/student_eval_4/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "published_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/student_eval_4/asgi.py",
+    "published": "archive/quiz/student_eval_4/asgi.py",
+    "source_sha256": "4d68f3c731c213b7d8015ab5988e2f0bf6c83bc1c9a36b269b83340efbd7c711",
+    "published_sha256": "b434dfdbdaa8c40236b7a1192e5dbe4254bf989bed3bb9465c0144845b4e1a94",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/student_eval_4/settings.py",
+    "published": "archive/quiz/student_eval_4/settings.py",
+    "source_sha256": "7eca2cdd388d71702183ae5b7a4759abff4aa13a3e4ccd3d843450d785b450d4",
+    "published_sha256": "d88c204e7b163b71cdcc56a101deb742a39ed2419851185ef84387d980ffd8cc",
+    "transformations": [
+      "Embedded secret, mail identity and credential settings removed.",
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/student_eval_4/urls.py",
+    "published": "archive/quiz/student_eval_4/urls.py",
+    "source_sha256": "a099d300c95eab1ac6fe3dfed2ecb597dd8ecf35e38f89f52dd46ce753753416",
+    "published_sha256": "3c018307c550bd60241738e4fdb811a0edcd34cf75fb71ea09451b7862f1de20",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "student_eval_5 (final)/student_eval_5 (final)/student_eval_4/wsgi.py",
+    "published": "archive/quiz/student_eval_4/wsgi.py",
+    "source_sha256": "b8f1ebfc07ae04ae060f1d981fd2724cf252d10ef3d043d1b63c3b1e23047363",
+    "published_sha256": "ed9b027000dbca04f9bfae1442c12b04fd53d619f7fb717a1722fae9f5207d51",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/manage.py",
+    "published": "archive/tutorials/manage.py",
+    "source_sha256": "811e8e3a41a165b1fe2bd868233ca08921b10a112595bd2312a8dab59be0db5b",
+    "published_sha256": "f9ae3bbbfe194255e14aa6abc0c775557366372765f554a1ffb8011553ae3b60",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/movies/__init__.py",
+    "published": "archive/tutorials/movies/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "published_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/movies/admin.py",
+    "published": "archive/tutorials/movies/admin.py",
+    "source_sha256": "0a2ae573afc503dd47881397ddbf93702d6e7c80fa952756c31b2c2266d3e460",
+    "published_sha256": "a00c7fb1553db5949f9771f8f4d8b5423038432914e9573efb86305a81fdcc29",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/movies/apps.py",
+    "published": "archive/tutorials/movies/apps.py",
+    "source_sha256": "8add924e7c2c8e5fbbba4dc51e07937b5465f662806a6e382dd8e3c803cb3750",
+    "published_sha256": "95d3f76236e39b549957b9aad8d96d1d02208ade7110221c4f72bd2985105417",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/movies/migrations/0001_initial.py",
+    "published": "archive/tutorials/movies/migrations/0001_initial.py",
+    "source_sha256": "7af0eb10a5ad7d231d8f5665198880f4c5f2a6c0df4421044932cb2cfd70113f",
+    "published_sha256": "e650ed5a13a302af85b59cbaf954536a29444571c4859d861fe06354faefc194",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/movies/migrations/__init__.py",
+    "published": "archive/tutorials/movies/migrations/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "published_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/movies/models.py",
+    "published": "archive/tutorials/movies/models.py",
+    "source_sha256": "55c0c721617b08b679006685e201cd54967265eebb60f255e65329285f2911e7",
+    "published_sha256": "90a537e42d597e5125a4cd5861f50fd05d8367ddecf122541aa243a90ee6ab53",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/movies/tests.py",
+    "published": "archive/tutorials/movies/tests.py",
+    "source_sha256": "dae0da7efdcdb3a7fb572d5e914b60631099122d4a4727ac6434c016161c5fe1",
+    "published_sha256": "9ab6c6191360e63c1b4c9b5659aef348a743c9e078be68190917369e4e9563e8",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/movies/urls.py",
+    "published": "archive/tutorials/movies/urls.py",
+    "source_sha256": "51fb18bdaaa0a9ca11f3584011ba71da495e912462a0889f4a9b3c4ef8f9967d",
+    "published_sha256": "35c517dee4b968093586307724e7aa1a65225dd11d18a72f32a52909d8a76cac",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/movies/views.py",
+    "published": "archive/tutorials/movies/views.py",
+    "source_sha256": "5f0b47458508051aee8c452a132cbc2df11241f32d6853120996557fed55fccf",
+    "published_sha256": "216430a804da9775efe2dffa54bad27dae8a25491a67f7232e4db585c3ae386a",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/myapi/serializers.py",
+    "published": "archive/tutorials/myapi/serializers.py",
+    "source_sha256": "eb61b8250ec622c3c55814b022dc99418004b696161b52d37bcad774e5a81588",
+    "published_sha256": "f851d1576191cc0ecbd538f04b0479bb63cb139c29e30ab936aa2e3dfea7ccc4",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/myapi/urls.py",
+    "published": "archive/tutorials/myapi/urls.py",
+    "source_sha256": "e074250f8fd801547a360c127948174ba5d26245fff219ccd9884e2fd68fabf5",
+    "published_sha256": "0e2d2e05119595f748192b826e97b32aef53be961355c073b6bba2efbe1ee719",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/myapi/views.py",
+    "published": "archive/tutorials/myapi/views.py",
+    "source_sha256": "3b34ce4dee6c89c0d6740b55eec7381fac0f509d1c0410c95649227f98bb8957",
+    "published_sha256": "ba387535a16445aa3f49ddb78d0dbc21ba66f5fd3c3530270aee120f3d260551",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/mysite/__init__.py",
+    "published": "archive/tutorials/mysite/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "published_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/mysite/asgi.py",
+    "published": "archive/tutorials/mysite/asgi.py",
+    "source_sha256": "90a3e16ba0ddb6eb11dee761d2ed3ccd800cf393b05c5755bf62c38354967f08",
+    "published_sha256": "0e5049fb0488647babad879354d0c0758588ab497377a37aaf10a674757e6b2c",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/mysite/settings.py",
+    "published": "archive/tutorials/mysite/settings.py",
+    "source_sha256": "4ce627d7a03596f574af28c07026ec030778e50f18237cf5c7adcc636b0e98a8",
+    "published_sha256": "b426dedb7cc28a1f8424080821ea4cf900bb968eff2c924d12c41f75006c78be",
+    "transformations": [
+      "Embedded secret, mail identity and credential settings removed.",
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/mysite/urls.py",
+    "published": "archive/tutorials/mysite/urls.py",
+    "source_sha256": "eca04a2d58a2ee8653c7fa3c3b4adc3609277c2a7c7600b21288033bd6dc686a",
+    "published_sha256": "304b1f275cc6303cf211fd50c0f07203b0513a7b1ee03339d26251269f058140",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/mysite/wsgi.py",
+    "published": "archive/tutorials/mysite/wsgi.py",
+    "source_sha256": "632535741342bc4f718a5a592f415da6b5d778dcd0a6c6a40b7d9affed6cea67",
+    "published_sha256": "946c33de79d448672d2f43cd184c3ab3128ed9c9c7cebde12ae25dc56a6f5e67",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/polls/__init__.py",
+    "published": "archive/tutorials/polls/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "published_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/polls/admin.py",
+    "published": "archive/tutorials/polls/admin.py",
+    "source_sha256": "818911271bf5e1ac67567786780837bb160c9c3389996bbb0489de17be3445e9",
+    "published_sha256": "c188cbce1fc0d6b4603ef77ff45ee7781bcf58e9d7f123c245d7871875e2675e",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/polls/apps.py",
+    "published": "archive/tutorials/polls/apps.py",
+    "source_sha256": "b7a120b55e551f501b3efd3087f9aef15a4f1b76a2ac24332df9d69e57d66fbc",
+    "published_sha256": "e68df7f9a6b7ed4b0d753a7d8bd688b2ff42b3b6626eb44aa54b8f6850b2cd55",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/polls/migrations/0001_initial.py",
+    "published": "archive/tutorials/polls/migrations/0001_initial.py",
+    "source_sha256": "44e7e047113964bae8e3acfd73ef98b37db39b23a2531807d8dbdde27bf218ae",
+    "published_sha256": "fcde08573a610b0f5a270d7379a1e81af8b0dbca4010072c5e42d0c7acd53a6d",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/polls/migrations/0002_alter_choice_choice_text_and_more.py",
+    "published": "archive/tutorials/polls/migrations/0002_alter_choice_choice_text_and_more.py",
+    "source_sha256": "588424889cf5a4add4f0ae062700a0f38d9fc28fa8b73b49ded96459a2de948e",
+    "published_sha256": "4f8b0be50ac44f373ff21555fb23053e0ace97b201c35cae84edd3a48117dafc",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/polls/migrations/__init__.py",
+    "published": "archive/tutorials/polls/migrations/__init__.py",
+    "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "published_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/polls/models.py",
+    "published": "archive/tutorials/polls/models.py",
+    "source_sha256": "ac1aac6fd898e147fb7cafa03ef071e877574e87538f168e03368b43aacc85da",
+    "published_sha256": "de957535f24e3d6993f417062557424946bd07beeaef9a480a3a260276e2c74e",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/polls/templates/temp1.html",
+    "published": "archive/tutorials/polls/templates/temp1.html",
+    "source_sha256": "4414eaaa9c3dbebc66be9eea877de68c8106a7164b4779b43031312f64194343",
+    "published_sha256": "28fc347ad0ec382db97d82d48144718a4c765127e18bd2b5ff6660eb159f926d",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/polls/tests.py",
+    "published": "archive/tutorials/polls/tests.py",
+    "source_sha256": "dae0da7efdcdb3a7fb572d5e914b60631099122d4a4727ac6434c016161c5fe1",
+    "published_sha256": "9ab6c6191360e63c1b4c9b5659aef348a743c9e078be68190917369e4e9563e8",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/polls/urls.py",
+    "published": "archive/tutorials/polls/urls.py",
+    "source_sha256": "0942304e17f5da92439e0000c5c8ea74c107c772854fa5b1f0da6fd3662bcc65",
+    "published_sha256": "70ba16bfdebeed398bb9a759f7ea02e067ae2360d7824de39cbb1888512abc2e",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  },
+  {
+    "source": "djangotutorial/polls/views.py",
+    "published": "archive/tutorials/polls/views.py",
+    "source_sha256": "5a0a80930162c968892f368c0ffd399fa48a6b7b7d16011b8e6a4280f26e7c60",
+    "published_sha256": "a9b4e225da902019a0532eaa3c19148859d69d24897614918a1c56190750a79d",
+    "transformations": [
+      "UTF-8 and LF line endings; trailing file whitespace normalized."
+    ]
+  }
+]

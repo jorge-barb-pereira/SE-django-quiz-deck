@@ -1,0 +1,11 @@
+{% extends 'game/base.html' %}{% block content %}<div class="page-title"><p class="eyebrow">YOUR NEXT CHALLENGE</p>
+<h1>Welcome, {{ player.name }}.</h1><p class="lede">Pick a card, trust your thinking, and build your score.</p></div>
+<div class="metrics"><div><span>Personal best</span><strong>{{ player.best_score }}<small> / 20</small></strong></div>
+<div><span>Attempts remaining</span><strong>{{ attempts_left }}<small> / 3</small></strong></div><div><span>Time per game</span><strong>90<small> minutes</small></strong></div></div>
+<section class="panel"><h2>How it works</h2><p>Answer ten multiple-choice cards across four difficulty levels. A correct answer earns 2–5 points.
+Reach 20 points, finish every card, or end your game whenever you're ready. Each card can be answered once.</p>
+<p>A new game uses one of your three attempts. You can resume an active game without using another attempt; its clock keeps running while you're away.</p>
+{% if active or attempts_left %}<form method="post">{% csrf_token %}<button class="primary">{% if active %}Resume my game{% else %}Start a new game{% endif %} →</button></form>
+{% else %}<p class="notice">You've completed all three attempts. Your results are saved below.</p>{% endif %}</section>
+{% if games %}<section class="history"><h2>Your games</h2><ul>{% for game in games %}<li><span>Game {{ forloop.revcounter }} · {{ game.get_status_display }}</span>
+<a href="{% url 'dashboard' game.pk %}">{{ game.score }} / 20 →</a></li>{% endfor %}</ul></section>{% endif %}{% endblock %}

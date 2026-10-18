@@ -1,0 +1,10 @@
+{% extends 'game/base.html' %}{% block title %}Sign in · Quiz Deck{% endblock %}
+{% block content %}<div class="split"><section class="intro"><p class="eyebrow">A LITTLE CHALLENGE. A GOOD IDEA.</p>
+<h1>Your next good answer starts here.</h1><p class="lede">Ten cards. Four levels. A fresh way to test what you know.</p>
+<div class="sample-cards" aria-hidden="true"><div>01<span>Think</span></div><div>02<span>Choose</span></div><div>03<span>Discover</span></div></div>
+<div class="facts"><span><strong>10</strong> cards</span><span><strong>20</strong> point goal</span><span><strong>90</strong> minutes</span></div></section>
+<section class="panel"><p class="eyebrow">LET'S GET STARTED</p><h2>Make room for a challenge.</h2>
+<p>Enter your name and email to request a sign-in code.</p>
+{% if console_demo %}<div class="notice">Local demo: find your verification message in the server terminal. No email is sent.</div>{% endif %}
+<form method="post">{% csrf_token %}{{ form.as_p }}<button class="primary">Request my code <span aria-hidden="true">→</span></button></form>
+<p class="small">Your code expires after five minutes.</p></section></div>{% endblock %}

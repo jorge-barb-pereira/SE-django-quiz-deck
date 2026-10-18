@@ -1,0 +1,6 @@
+{% extends 'game/base.html' %}{% block content %}<a class="back" href="{% url 'dashboard' game.pk %}">← Back to my cards</a>
+<section class="panel question"><div class="game-heading"><p class="eyebrow">LEVEL {{ card.question.level }} · {{ card.points }} POINTS</p>
+<span class="clock" data-expires="{{ game.expires_at|date:'c' }}">90:00</span></div>
+<h1>{{ card.question.text }}</h1><form method="post">{% csrf_token %}<fieldset><legend>Choose your answer</legend>{{ form.answer.errors }}
+{% for radio in form.answer %}<label class="answer">{{ radio.tag }}<span>{{ radio.choice_label }}</span></label>{% endfor %}</fieldset>
+<button class="primary">Save my answer →</button></form><p class="small">One answer per card. Take a moment before you choose.</p></section>{% endblock %}

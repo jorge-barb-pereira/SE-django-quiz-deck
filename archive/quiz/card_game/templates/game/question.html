@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question</title>
+
+    <!-- Script do MathJax para renderização de equações -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+
+    <script type="text/x-mathjax-config">
+      MathJax = {
+          tex: {
+              inlineMath: [['$', '$'], ['\\(', '\\)']],
+              displayMath: [['$$', '$$'], ['\\[', '\\]']]
+          }
+      };
+    </script>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background-color: #f4f4f9;
+        position: relative;
+      }
+      .question-container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+      }
+      .question-text {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+      }
+      .answers-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+      }
+      .answer-option {
+        background-color: #f4f4f9;
+        padding: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: all 0.3s ease;
+      }
+      .answer-option:hover {
+        border-color: #007bff;
+      }
+      .answer-option input {
+        margin-right: 10px;
+      }
+      button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745;
+        color: white;
+        font-size: 1.2em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      button:hover {
+        background-color: #218838;
+      }
+
+      /* Timer container */
+      .time-container {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .timer {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        border: 5px solid #4caf50;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2em;
+        font-weight: bold;
+        background-color: white;
+        position: relative;
+      }
+      .timer::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: conic-gradient(
+          #4caf50 {{time_fraction}}%,
+          #ddd {{time_fraction}}%
+        );
+        border-radius: 50%;
+        transform: rotate(-90deg);
+      }
+    </style>
+  </head>
+  <body>
+    {% load markdownify %}
+
+    <!-- Timer Circular -->
+    <div class="time-container">
+      <div class="timer" id="timer">
+        {{ time_left_minutes }}:{{ time_left_seconds|default_if_none:"00" }}
+      </div>
+    </div>
+
+    <div class="question-container">
+      <h1>Pergunta de Nível {{question.level}}</h1>
+
+      <!-- Formata a pergunta utilizando Markdown -->
+      <div class="question-text">{{ question.question_text}}</div>
+
+      <form method="post">
+        {% csrf_token %}
+        <div class="answers-container">
+          <label class="answer-option">
+            <input type="radio" name="selected_option" value="1" />
+            {{ question.answer_1 }}
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="selected_option" value="2" />
+            {{ question.answer_2 }}
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="selected_option" value="3" />
+            {{ question.answer_3 }}
+          </label>
+          <label class="answer-option">
+            <input type="radio" name="selected_option" value="4" />
+            {{ question.answer_4 }}
+          </label>
+        </div>
+
+        <button type="submit">Submit Answer</button>
+      </form>
+    </div>
+
+    <!-- Script para atualizar o timer em tempo real -->
+    <script>
+      // Obter o tempo de início do jogo do backend, garantido que o formato ISO é utilizado
+      const gameStartTime = new Date(
+        "{{ game.start_time|date:'Y-m-d\\TH:i:s' }}"
+      );
+
+      function updateTimer() {
+        // Obter o tempo atual
+        const currentTime = new Date();
+
+        // Calcular a diferença em milissegundos
+        const timeDifference = currentTime - gameStartTime
+        const timeTimmer = {{game.duration_s}} * 1000 - timeDifference;
+
+        // Converter para minutos e segundos
+        const minutes = Math.floor(timeTimmer / 1000 / 60);
+        const seconds = Math.floor((timeTimmer / 1000) % 60);
+
+        // Adicionar zeros à esquerda, se necessário
+        const formattedMinutes = String(minutes).padStart(2, "0");
+        const formattedSeconds = String(seconds).padStart(2, "0");
+
+        // Atualizar o elemento HTML
+        document.getElementById(
+          "timer"
+        ).textContent = `${formattedMinutes}:${formattedSeconds}`;
+      }
+
+      // Atualiza o cronômetro a cada segundo
+      setInterval(updateTimer, 1000);
+    </script>
+  </body>
+</html>

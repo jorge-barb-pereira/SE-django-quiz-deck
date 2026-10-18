@@ -1,0 +1,3 @@
+* text=auto
+archive/** -text -whitespace
+*.png binary

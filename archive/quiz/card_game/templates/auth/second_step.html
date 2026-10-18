@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autenticação - Etapa 2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    />
+    <style>
+      body {
+        background-image: linear-gradient(to bottom, #10b981, #34d399);
+      }
+      .form-container {
+        background: #fff;
+        padding: 3rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        max-width: 600px;
+        width: 100%;
+      }
+      .form-container h2 {
+        font-size: 2.25rem;
+        color: #1f2937;
+      }
+      .form-container p {
+        font-size: 1.125rem;
+        color: #374151;
+      }
+      .form-container label {
+        font-size: 1rem;
+        color: #1f2937;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+      .form-container input {
+        background-color: #f3f4f6;
+        border: 2px solid #d1d5db;
+        color: #111827;
+        padding: 0.75rem;
+        font-size: 1.125rem;
+        border-radius: 0.75rem;
+        transition: border-color 0.3s ease;
+        width: 100%;
+      }
+      .form-container input:focus {
+        border-color: #10b981;
+        box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.2);
+      }
+      .form-container button {
+        background-color: #10b981;
+        color: white;
+        padding: 1rem;
+        font-size: 1.125rem;
+        transition: background-color 0.3s ease;
+        border-radius: 0.75rem;
+        width: 100%;
+        font-weight: bold;
+      }
+      .form-container button:hover {
+        background-color: #059669;
+      }
+      .error-message {
+        color: #b91c1c;
+        font-size: 0.875rem;
+        margin-top: 0.5rem;
+      }
+    </style>
+  </head>
+  <body class="flex items-center justify-center min-h-screen">
+    <div class="form-container">
+      <h2 class="text-center font-semibold mb-4">Etapa 2: Verificação</h2>
+
+      <p class="text-gray-600 text-center mb-6">
+        Insira o código de verificação enviado para o seu e-mail institucional.
+        Se o código estiver correto, a sua autenticação será concluída.
+      </p>
+
+      <form action="{% url 'second_step' %}" method="post" class="space-y-6">
+        {% csrf_token %}
+
+        <!-- Campo Código de Verificação -->
+        <div>
+          <label for="verification_code">Código de Verificação</label>
+          <input
+            type="number"
+            id="verification_code"
+            name="verification_code"
+            required
+            class="bg-gray-100 border border-gray-300 rounded-lg py-2 px-4 w-full"
+          />
+          <!-- Exibição de Erros -->
+          {% if form.verification_code.errors %}
+          <p class="error-message">{{ form.verification_code.errors.0 }}</p>
+          {% endif %}
+        </div>
+
+        <button
+          type="submit"
+          class="w-full rounded-lg text-white font-bold py-3 px-4 mt-6"
+        >
+          Verificar Código
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

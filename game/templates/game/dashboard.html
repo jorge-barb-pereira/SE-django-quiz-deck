@@ -1,0 +1,8 @@
+{% extends 'game/base.html' %}{% block content %}<div class="game-heading"><div><p class="eyebrow">ONE CARD AT A TIME</p><h1>Make your next move.</h1></div>
+<div class="clock">Time remaining <strong data-expires="{{ game.expires_at|date:'c' }}">90:00</strong></div></div>
+<div class="score"><label for="score">Your score <strong>{{ game.score }} / 20</strong></label><progress id="score" max="20" value="{{ game.score }}">{{ game.score }}</progress></div>
+<div class="card-grid">{% for card in cards %}{% if not card.answered_at %}<a class="quiz-card" href="{% url 'question' card.pk %}">
+<span class="eyebrow">LEVEL {{ card.question.level }}</span><strong>{{ card.points }}<small> points</small></strong><span>Open card →</span></a>
+{% else %}<div class="quiz-card answered {% if card.correct %}correct{% endif %}"><span class="eyebrow">LEVEL {{ card.question.level }}</span>
+<strong>{{ card.status_label }}</strong><span>Answer saved</span></div>{% endif %}{% endfor %}</div>
+<form class="finish" method="post">{% csrf_token %}<button class="secondary">Finish and save my result</button></form>{% endblock %}

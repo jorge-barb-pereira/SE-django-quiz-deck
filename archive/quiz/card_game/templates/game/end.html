@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fim de Jogo</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #ff4d4d; /* Fundo avermelhado */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        padding: 50px;
+        text-align: center;
+        max-width: 800px; /* Tornar o quadrado mais largo */
+        width: 100%;
+        position: relative;
+      }
+      h1 {
+        color: #343a40; /* Cinza escuro */
+        font-size: 36px;
+        margin-bottom: 30px;
+      }
+      .student-info {
+        font-size: 18px;
+        color: #6c757d; /* Cor cinza */
+        margin-bottom: 20px;
+      }
+      .score-box {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #e9ecef;
+        border-radius: 10px;
+      }
+      .score-item {
+        text-align: center;
+      }
+      .score-item p {
+        margin: 0;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .score-item .score {
+        color: #007bff; /* Azul */
+      }
+      .score-item .max-score {
+        color: #28a745; /* Verde */
+      }
+      .score-item .attempts {
+        color: #ffc107; /* Amarelo */
+      }
+      .message {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 25px;
+      }
+      .button {
+        margin-top: 40px;
+      }
+      a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #007bff;
+        padding: 15px 40px;
+        border-radius: 5px;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+      }
+      a:hover {
+        background-color: #0056b3;
+      }
+      .additional-text {
+        color: #666;
+        margin-top: 40px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Parabéns, {{ game.student.name }}!</h1>
+
+      <p class="student-info">
+        (Número de Estudante: {{ game.student.student_id }})
+      </p>
+
+      <div class="score-box">
+        <div class="score-item">
+          <p class="score">{{ game.score }}/20</p>
+          <p>Pontuação</p>
+        </div>
+        <div class="score-item">
+          <p class="max-score">{{ game.student.mxm_score }}/20</p>
+          <p>Pontuação Máxima</p>
+        </div>
+        <div class="score-item">
+          <p class="attempts">{{ game.student.n_games }}/3</p>
+          <p>Tentativas</p>
+        </div>
+      </div>
+
+      <div class="message">
+        <p>O jogo terminou! Confira seus resultados acima.</p>
+        <p>
+          Se ainda tiver tentativas restantes, pode jogar novamente para
+          melhorar sua pontuação máxima!
+        </p>
+      </div>
+
+      <div class="additional-text">
+        <p>
+          Obrigado por participar! Cada tentativa é uma oportunidade de aprender
+          e melhorar suas habilidades.
+        </p>
+        <p>Continue se desafiando e alcance o seu melhor resultado!</p>
+      </div>
+
+      <div class="button">
+        <a href="{% url 'game_instructions' %}">Jogar Novamente</a>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      // Evita que o usuário volte para a página anterior usando o botão de voltar
+      window.history.pushState(null, null, window.location.href);
+      window.onpopstate = function () {
+        window.history.pushState(null, null, window.location.href);
+      };
+    </script>
+  </body>
+</html>

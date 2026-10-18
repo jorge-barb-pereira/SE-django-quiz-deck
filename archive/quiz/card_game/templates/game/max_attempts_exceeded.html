@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentativas Excedidas</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    />
+    <style>
+      body {
+        background-color: #fbbf24; /* Fundo amarelo */
+      }
+      .container {
+        background: #fff;
+        padding: 3rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        max-width: 900px;
+        width: 100%;
+      }
+      .container h2 {
+        font-size: 2.25rem;
+        color: #1f2937;
+      }
+      .container p {
+        font-size: 1.125rem;
+        color: #374151;
+      }
+      .container button {
+        background-color: #10b981;
+        color: white;
+        padding: 1rem;
+        font-size: 1.125rem;
+        transition: background-color 0.3s ease;
+        border-radius: 0.75rem;
+        width: 100%;
+        font-weight: bold;
+      }
+      .container button:hover {
+        background-color: #059669;
+      }
+    </style>
+  </head>
+  <body class="flex items-center justify-center min-h-screen">
+    <div class="container">
+      <h2 class="text-center font-semibold mb-6">Tentativas Excedidas</h2>
+
+      <p class="text-gray-600 mb-6 text-center">
+        Olá <strong>{{ name }}</strong> (ID: {{ student_id }}), você excedeu o
+        número máximo de tentativas permitidas.
+      </p>
+
+      <ul class="list-disc list-inside mb-6">
+        <li><strong>Número de tentativas usadas:</strong> {{ n_games }}</li>
+        <li>
+          <strong>Sua pontuação máxima até agora:</strong> {{ max_score }}
+          pontos
+        </li>
+      </ul>
+
+      <p class="text-gray-600 text-center">
+        Para mais informações, entre em contato com o suporte.
+      </p>
+
+      <form method="POST">
+        {% csrf_token %}
+        <button
+          type="submit"
+          class="w-full rounded-lg text-white font-bold py-3 px-4 mt-6"
+        >
+          Sair
+        </button>
+      </form>
+    </div>
+
+    <script type="text/javascript">
+      // Evita que o usuário volte para a página anterior usando o botão de back
+      window.history.pushState(null, null, window.location.href);
+      window.onpopstate = function () {
+        window.history.pushState(null, null, window.location.href);
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autenticação - Etapa 1</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    />
+    <style>
+      body {
+        background-image: linear-gradient(to bottom, #3b82f6, #60a5fa);
+      }
+      .form-container {
+        background: #fff;
+        padding: 3rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        max-width: 600px;
+        width: 100%;
+      }
+      .form-container h2 {
+        font-size: 2.25rem;
+        color: #1f2937;
+      }
+      .form-container p {
+        font-size: 1.125rem;
+        color: #374151;
+      }
+      .form-container label {
+        font-size: 1rem;
+        color: #1f2937;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+      .form-container input {
+        background-color: #f3f4f6;
+        border: 2px solid #d1d5db;
+        color: #111827;
+        padding: 0.75rem;
+        font-size: 1.125rem;
+        border-radius: 0.75rem;
+        transition: border-color 0.3s ease;
+        width: 100%;
+      }
+      .form-container input:focus {
+        border-color: #3b82f6;
+        box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+      }
+      .form-container button {
+        background-color: #3b82f6;
+        color: white;
+        padding: 1rem;
+        font-size: 1.125rem;
+        transition: background-color 0.3s ease;
+        border-radius: 0.75rem;
+        width: 100%;
+        font-weight: bold;
+      }
+      .form-container button:hover {
+        background-color: #2563eb;
+      }
+    </style>
+  </head>
+  <body class="flex items-center justify-center min-h-screen">
+    <div class="form-container">
+      <h2 class="text-center font-semibold mb-4">Etapa 1: Autenticação</h2>
+
+      <p class="text-gray-600 text-center mb-6">
+        Insira o seu nome completo e o número de estudante (ID). Um código de
+        verificação será enviado para o seu e-mail institucional para concluir a
+        autenticação.
+      </p>
+
+      <form action="{% url 'first_step' %}" method="post" class="space-y-6">
+        {% csrf_token %}
+
+        <!-- Campo Nome Completo -->
+        <div>
+          <label for="name">Nome Completo</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <!-- Campo Número de Estudante (ID) -->
+        <div>
+          <label for="student_id">Número de Estudante (ID)</label>
+          <input type="number" id="student_id" name="student_id" required />
+        </div>
+
+        <button
+          type="submit"
+          class="w-full rounded-lg text-white font-bold py-3 px-4 mt-6"
+        >
+          Continuar
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

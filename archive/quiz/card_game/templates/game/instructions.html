@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instruções do Jogo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+    />
+    <style>
+      body {
+        background-color: #fbbf24; /* Fundo amarelo */
+      }
+      .instruction-container {
+        background: #fff;
+        padding: 3rem;
+        border-radius: 1.5rem;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        max-width: 900px; /* Largura maior */
+        width: 100%;
+      }
+      .instruction-container h2 {
+        font-size: 2.25rem;
+        color: #1f2937;
+      }
+      .instruction-container p {
+        font-size: 1.125rem;
+        color: #374151;
+      }
+      .instruction-container ul {
+        margin-left: 1rem;
+        font-size: 1.125rem;
+        color: #374151;
+      }
+      .instruction-container li {
+        margin-bottom: 0.5rem;
+      }
+      .instruction-container button {
+        background-color: #10b981;
+        color: white;
+        padding: 1rem;
+        font-size: 1.125rem;
+        transition: background-color 0.3s ease;
+        border-radius: 0.75rem;
+        width: 100%;
+        font-weight: bold;
+      }
+      .instruction-container button:hover {
+        background-color: #059669;
+      }
+    </style>
+  </head>
+  <body class="flex items-center justify-center min-h-screen">
+    <div class="instruction-container">
+      <h2 class="text-center font-semibold mb-6">Instruções do Jogo</h2>
+
+      <p class="text-gray-600 mb-6 text-center">
+        Olá <strong>{{ name }}</strong> (ID: {{ student_id }}), bem-vindo ao
+        jogo de cartas de avaliação! Aqui estão as regras e instruções para
+        jogar:
+      </p>
+
+      <ul class="list-disc list-inside mb-6">
+        <li>
+          O jogo tem quatro níveis de dificuldade, e você ganhará pontos ao
+          responder corretamente.
+        </li>
+        <li>As cartas contêm perguntas de múltipla escolha.</li>
+        <li>
+          Você terá um limite de tempo de 90 minutos para completar o jogo.
+        </li>
+        <li>
+          Seu objetivo é alcançar 20 pontos. O jogo termina automaticamente se
+          você atingir essa pontuação.
+        </li>
+        <li>Você pode tentar responder cada carta apenas uma vez.</li>
+      </ul>
+
+      <p class="text-gray-600 mb-6 text-center">
+        Aqui estão os detalhes do seu histórico de participações no jogo:
+      </p>
+
+      <ul class="list-disc list-inside mb-6">
+        <li><strong>Número de tentativas:</strong> {{ n_games }}</li>
+        <li>
+          <strong>Pontuação máxima até agora:</strong> {{ max_score }} pontos
+        </li>
+      </ul>
+
+      <p class="text-gray-600 text-center mb-6">
+        Boa sorte! Quando estiver pronto, clique no botão abaixo para iniciar o
+        jogo.
+      </p>
+
+      <form method="POST">
+        {% csrf_token %}
+        <button
+          type="submit"
+          class="w-full rounded-lg text-white font-bold py-3 px-4 mt-6"
+        >
+          Iniciar Jogo
+        </button>
+      </form>
+    </div>
+
+    <script type="text/javascript">
+      // Evita que o usuário volte para a página anterior usando o botão de back
+      window.history.pushState(null, null, window.location.href);
+      window.onpopstate = function () {
+        window.history.pushState(null, null, window.location.href);
+      };
+    </script>
+  </body>
+</html>

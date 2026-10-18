@@ -1,0 +1,9 @@
+{% load static %}<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}Quiz Deck{% endblock %}</title><link rel="stylesheet" href="{% static 'game/app.css' %}">
+<script src="{% static 'game/timer.js' %}" defer></script></head><body>
+<header><a class="brand" href="{% url 'home' %}"><span class="logo">Q</span> Quiz Deck</a>
+<nav>{% if request.session.player_id %}<a href="{% url 'home' %}">My games</a>
+<form action="{% url 'logout' %}" method="post">{% csrf_token %}<button class="quiet">Sign out</button></form>{% endif %}</nav></header>
+<main>{% for message in messages %}<div class="notice" role="status">{{ message }}</div>{% endfor %}
+{% block content %}{% endblock %}</main><footer>Think it through. Play your next card.</footer></body></html>

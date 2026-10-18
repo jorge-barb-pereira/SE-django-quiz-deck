@@ -1,0 +1,4 @@
+{% extends 'game/base.html' %}{% block content %}<section class="panel narrow result"><p class="eyebrow">CHALLENGE COMPLETE</p>
+<h1>Every answer is a step forward.</h1><div class="result-score">{{ game.score }}<small> / 20</small></div>
+<p>{% if game.score >= 20 %}You reached the goal. Nicely done!{% else %}Your result is saved. Keep exploring and build on what you've learned.{% endif %}</p>
+<a class="primary link-button" href="{% url 'home' %}">Back to my games →</a></section>{% endblock %}
